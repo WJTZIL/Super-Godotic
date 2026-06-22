@@ -4,3 +4,4 @@ If you happen to find these, please open a <a href="https://github.com/WJTZIL/Su
 
 ## Super Godotic
 A ARPG game created by WJTZIL.
+Download link: <a href="https://wjtzil.itch.io/super-godotic">itch.io</a>
