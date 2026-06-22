@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://d3caeiiqi46e4"]
+
+[ext_resource type="Texture2D" uid="uid://c4buq5jwtrksi" path="res://art/ui/GUI_Box.png" id="1_0ggb7"]
+[ext_resource type="FontFile" uid="uid://b17k1gk1h1mwd" path="res://fonts/NormalFont.ttf" id="1_qrgw7"]
+[ext_resource type="Script" uid="uid://bs1cb2r8vhm5i" path="res://fps.gd" id="2_q82uc"]
+[ext_resource type="Texture2D" uid="uid://5tp4qhtyyevb" path="res://art/ui/facesets/Box.png" id="4_8vf7g"]
+[ext_resource type="Texture2D" uid="uid://bwmdcecktgm3" path="res://art/ui/facesets/Boy.png" id="5_y7wfm"]
+[ext_resource type="Texture2D" uid="uid://c22pops2mvgsd" path="res://art/ui/KeyT.png" id="6_y7wfm"]
+
+[node name="Control" type="Control" unique_id=1589894899]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GuiBox" type="Sprite2D" parent="." unique_id=18270124]
+position = Vector2(46.750004, 10.500001)
+scale = Vector2(0.2990506, 0.35)
+texture = ExtResource("1_0ggb7")
+
+[node name="NAME" type="Label" parent="GuiBox" unique_id=749878525]
+offset_left = -149.64024
+offset_top = -24.285717
+offset_right = -28.640244
+offset_bottom = -8.285717
+theme_override_fonts/font = ExtResource("1_qrgw7")
+theme_override_font_sizes/font_size = 11
+text = "Super Godotic v.1.2b"
+
+[node name="CURRENTLY_PLAYING" type="Label" parent="GuiBox" unique_id=823223686]
+offset_left = -149.64024
+offset_top = -7.1428604
+offset_right = 3.3597565
+offset_bottom = 8.85714
+theme_override_fonts/font = ExtResource("1_qrgw7")
+theme_override_font_sizes/font_size = 11
+text = "Currently playing  as: Boy"
+
+[node name="CURRENTLY_PLAYING2" type="Label" parent="GuiBox" unique_id=1823764885]
+offset_left = -149.64024
+offset_top = 7.142853
+offset_right = 3.3597565
+offset_bottom = 23.142853
+theme_override_fonts/font = ExtResource("1_qrgw7")
+theme_override_font_sizes/font_size = 11
+text = "Press                    to hide the hud."
+
+[node name="FPS" type="Label" parent="GuiBox" unique_id=520464796]
+offset_left = -149.64024
+offset_top = -15.714289
+offset_right = -88.64024
+offset_bottom = 1.2857113
+theme_override_fonts/font = ExtResource("1_qrgw7")
+theme_override_font_sizes/font_size = 12
+text = "FPS: NaN"
+script = ExtResource("2_q82uc")
+
+[node name="FacesetBox" type="Sprite2D" parent="GuiBox" unique_id=866720163]
+position = Vector2(612.7725, -1.4285679)
+scale = Vector2(1.3932983, 1.1904761)
+texture = ExtResource("4_8vf7g")
+
+[node name="Boy" type="Sprite2D" parent="GuiBox/FacesetBox" unique_id=1259116788]
+position = Vector2(0, -3.8146973e-06)
+scale = Vector2(1.0105263, 1.0105264)
+texture = ExtResource("5_y7wfm")
+
+[node name="KeyT" type="Sprite2D" parent="." unique_id=322216815]
+position = Vector2(15, 16)
+scale = Vector2(0.3653846, 0.3653846)
+texture = ExtResource("6_y7wfm")
