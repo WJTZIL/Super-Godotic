@@ -1,0 +1,13 @@
+TileMapLayer
+CanvasLayer
+Label
+Button
+Control
+Tree
+OptionButton
+CollisionShape2D
+Camera2D
+AnimationPlayer
+AnimatedSprite2D
+Sprite2D
+CharacterBody2D
